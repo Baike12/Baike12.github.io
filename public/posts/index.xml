@@ -1,1 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on My New Hugo Site</title><link>https://baike12.github.io/posts/</link><description>Recent content in Posts on My New Hugo Site</description><generator>Hugo -- 0.147.9</generator><language>en-us</language><lastBuildDate>Tue, 02 Sep 2025 21:36:29 +0800</lastBuildDate><atom:link href="https://baike12.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello Hugo</title><link>https://baike12.github.io/posts/hello-hugo/</link><pubDate>Tue, 02 Sep 2025 21:36:29 +0800</pubDate><guid>https://baike12.github.io/posts/hello-hugo/</guid><description>&lt;p>这是我用 Hugo + GitHub Pages 搭建的第一篇博客！&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Baike的技术博客</title><link>https://baike12.github.io/posts/</link><description>Recent content in Posts on Baike的技术博客</description><generator>Hugo -- 0.147.9</generator><language>zh-cn</language><lastBuildDate>Wed, 03 Sep 2025 11:19:06 +0800</lastBuildDate><atom:link href="https://baike12.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Rag</title><link>https://baike12.github.io/posts/rag/</link><pubDate>Wed, 03 Sep 2025 11:19:06 +0800</pubDate><guid>https://baike12.github.io/posts/rag/</guid><description>&lt;p>包含两部分：&lt;/p>
+&lt;ul>
+&lt;li>建立索引&lt;/li>
+&lt;li>检索生成&lt;/li>
+&lt;/ul>
+&lt;h1 id="1建立索引">1 建立索引&lt;/h1>
+&lt;h2 id="11加载文档">1.1 加载文档&lt;/h2>
+&lt;h2 id="12拆分文档">1.2 拆分文档&lt;/h2>
+&lt;p>将分档拆分成小块有利于：&lt;/p>
+&lt;ul>
+&lt;li>建立索引&lt;/li>
+&lt;li>传递给模型&lt;/li>
+&lt;/ul>
+&lt;h2 id="13存储文档">1.3 存储文档&lt;/h2>
+&lt;h1 id="2一个简单例子">2 一个简单例子&lt;/h1>
+&lt;h2 id="21文档处理">2.1 文档处理&lt;/h2>
+&lt;ul>
+&lt;li>定义加载器&lt;/li>
+&lt;li>分割文档&lt;/li>
+&lt;li>将文档存入向量数据库&lt;/li>
+&lt;/ul>
+&lt;h2 id="22状态定义">2.2 状态定义&lt;/h2>
+&lt;p>使用一个类定义状态，包含：&lt;/p>
+&lt;ul>
+&lt;li>问题&lt;/li>
+&lt;li>上下文&lt;/li>
+&lt;li>回答
+这个状态也是在图中流转的单位&lt;/li>
+&lt;/ul>
+&lt;h2 id="23函数定义">2.3 函数定义&lt;/h2>
+&lt;p>封装检索和模型调用&lt;/p>
+&lt;h2 id="24查询分析">2.4 查询分析&lt;/h2>
+&lt;p>可以对检索到的文档进行分析，之后在传入模型上下文，比如：&lt;/p>
+&lt;ul>
+&lt;li>限制检索到的内容年份&lt;/li>
+&lt;li>对查询进行重写&lt;/li>
+&lt;/ul>
+&lt;h3 id="241流程">2.4.1 流程&lt;/h3>
+&lt;ul>
+&lt;li>定义个查询分析类&lt;/li>
+&lt;li>定义状态类，其中包含查询分析类&lt;/li>
+&lt;li>定义查询分析函数：其中调用一次模型，让模型输出符合查询分析类的格式化查询，相当于重写一次查询，然后将&lt;/li>
+&lt;/ul>
+&lt;h1 id="3处理历史消息">3 处理历史消息&lt;/h1>
+&lt;p>langgraph内置有多种消息：&lt;/p>
+&lt;ul>
+&lt;li>用户输入作为人类消息&lt;/li>
+&lt;li>工具调用作为ai消息&lt;/li>
+&lt;li>检索文档作为工具消息&lt;/li>
+&lt;li>最后的响应也作为ai消息&lt;/li>
+&lt;/ul>
+&lt;h2 id="31checkpoint">3.1 checkpoint&lt;/h2>
+&lt;p>langchain使用checkpoint来持久化状态state&lt;/p>
+&lt;h1 id="4agent">4 agent&lt;/h1>
+&lt;p>langgraph内置了react agent框架，可以将tool调用的结果作为agent的输入，驱动下一个tool调用或者结束&lt;/p></description></item><item><title>Hello Hugo</title><link>https://baike12.github.io/posts/hello-hugo/</link><pubDate>Tue, 02 Sep 2025 21:36:29 +0800</pubDate><guid>https://baike12.github.io/posts/hello-hugo/</guid><description>使用Hugo和GitHub Pages搭建个人博客的第一篇文章</description></item><item><title>Rust编程语言入门</title><link>https://baike12.github.io/posts/rust-getting-started/</link><pubDate>Thu, 16 Jan 2025 14:30:00 +0800</pubDate><guid>https://baike12.github.io/posts/rust-getting-started/</guid><description>Rust编程语言的特点和入门指南</description></item><item><title>人工智能入门指南</title><link>https://baike12.github.io/posts/ai-introduction/</link><pubDate>Wed, 15 Jan 2025 10:00:00 +0800</pubDate><guid>https://baike12.github.io/posts/ai-introduction/</guid><description>人工智能的基础概念和入门路径</description></item></channel></rss>

@@ -1,0 +1,127 @@
+/* 自定义样式 - 字体大小调整 */
+
+/* 正文字体大小 */
+.post-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 标题字体大小调整 */
+.post-content h1 {
+    font-size: 2rem;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+}
+
+.post-content h3 {
+    font-size: 1.25rem;
+}
+
+.post-content h4 {
+    font-size: 1.1rem;
+}
+
+/* 代码块字体大小 */
+.post-content pre,
+.post-content code {
+    font-size: 14px;
+}
+
+/* 列表字体大小 */
+.post-content ul,
+.post-content ol {
+    font-size: 16px;
+}
+
+/* 引用块字体大小 */
+.post-content blockquote {
+    font-size: 16px;
+}
+
+/* 表格字体大小 */
+.post-content table {
+    font-size: 14px;
+}
+
+/* 移动端字体大小调整 */
+@media (max-width: 768px) {
+    .post-content {
+        font-size: 15px;
+    }
+    
+    .post-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .post-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .post-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 图片样式优化 */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+/* figure元素样式 */
+.post-content figure {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.post-content figure img {
+    margin-bottom: 0.5rem;
+}
+
+.post-content figcaption {
+    font-size: 14px;
+    color: var(--secondary);
+    font-style: italic;
+}
+
+/* 分类和标签样式优化 */
+.post-meta .i18n_list {
+    font-size: 14px;
+}
+
+.post-tags a {
+    font-size: 13px;
+    padding: 4px 8px;
+    margin: 2px;
+    background: var(--code-bg);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.post-tags a:hover {
+    background: var(--tertiary);
+}
+
+/* 目录样式优化 */
+.toc {
+    font-size: 14px;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.toc a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.toc a:hover {
+    color: var(--tertiary);
+}
