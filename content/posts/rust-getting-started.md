@@ -2,7 +2,7 @@
 title: "Rust编程语言入门"
 date: 2025-01-16T14:30:00+08:00
 draft: false
-categories: ["Rust"]
+categories: ["AI"]
 tags: ["系统编程", "内存安全", "性能"]
 author: "Baike"
 description: "Rust编程语言的特点和入门指南"

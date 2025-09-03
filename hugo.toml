@@ -28,6 +28,9 @@ theme = "PaperMod"
   ShowToc = true
   # 默认展开目录
   TocOpen = false
+  
+  # 启用数学公式渲染
+  math = true
 
   # 主页信息模式
   [params.homeInfoParams]
@@ -61,4 +64,27 @@ theme = "PaperMod"
 
 # 输出格式
 [outputs]
-  home = ["HTML", "RSS", "JSON"]  
+  home = ["HTML", "RSS", "JSON"]
+
+# Markdown配置
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    style = "github"
+    tabWidth = 4  
