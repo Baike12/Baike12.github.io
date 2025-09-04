@@ -1,6 +1,16 @@
-{{- /* 扩展head部分 */ -}}
+<!-- 加载 MathJax v3（最新稳定版） -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-{{- /* 数学公式支持 */ -}}
-{{- partial "math.html" . -}}
-
-{{- /* 可以在这里添加其他自定义head内容 */ -}}
+<!-- 配置 MathJax：支持 $...$（行内公式）和 $$...$$（块级公式） -->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],  // 行内公式触发符
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],  // 块级公式触发符
+      processEscapes: true  // 支持 \$ 转义（避免被解析为公式）
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
